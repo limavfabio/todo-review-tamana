@@ -3,6 +3,7 @@
  */
 
 import TaskGenerate from '../src/modules/TaskGenerate.js';
+
 describe('Add tests', () => {
   test('Check tasks object lenght after adding some tasks', () => {
     document.body.innerHTML = `
@@ -22,7 +23,6 @@ describe('Add tests', () => {
     `;
     TaskGenerate.addTask('test');
     const tasksContainer = document.querySelector('#tasks-container');
-    console.log(tasksContainer);
     TaskGenerate.addTask('test');
     expect(tasksContainer.children.length).toBe(1);
     TaskGenerate.addTask('test2');

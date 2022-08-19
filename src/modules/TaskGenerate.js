@@ -1,5 +1,4 @@
 import tasks from './tasks.js';
-// import trashIconPng from '../assets/trash-icon.png';
 import * as vars from './variables.js';
 
 export default class TaskGenerate {
@@ -17,7 +16,6 @@ export default class TaskGenerate {
 
   static reloadTasks() {
     const tasksContainer = document.querySelector('tasks-container');
-    console.log(tasksContainer);
     tasksContainer.innerHTML = '';
     for (let i = 0; i < tasks.length; i += 1) {
       TaskGenerate.renderTask(i);
